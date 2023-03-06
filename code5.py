@@ -46,9 +46,9 @@ def main():
 # End of main---------------------------------
 
 
-# Create a function called getInput
-# to get the height and velocity
-# from user
+'''A function called getInput
+that gets the height and velocity
+from user'''
 def getInput():
 
     # Ask user for height in feet
@@ -63,11 +63,12 @@ def getInput():
         return height, velocity
     print("Input is not valid.")
 
-    # End of getInput()----------------------------------
+# End of getInput()----------------------------------
 
 
-# Create a function called isValid
-# to verify data type is correct
+'''A function called isValid
+to verify data type of
+height and velocity are correct'''
 def isValid(h, v):
 
     # Check input from user
@@ -81,9 +82,9 @@ def isValid(h, v):
 # End of isValid()----------------------------------
 
 
-# Create function called maxHeight
-# to calculate the maximum height
-# of the ball
+'''A function called maxHeight
+to calculate the maximum height
+of the ball'''
 def maxHeight(h, v):
 
     # Set variables equal to integers
@@ -105,9 +106,9 @@ def maxHeight(h, v):
 # End of maxHeight()----------------------
 
 
-# Create function called exFinal
-# to find out when the ball is
-# at the ground again
+'''A function called exFinal
+to find out when the ball is
+at the ground again'''
 def exFinal(h, v):
 
     # Initialize time variable
@@ -144,11 +145,9 @@ def exFinal(h, v):
 # traveled in the x-direction
 # ----------------------------------------
 
-# Create function exDistance
-# to calculate the total distance
-# traveled in the x-direction
-
-
+'''A function exDistance
+calculates the total distance
+traveled in the x-direction'''
 def exDistance(v):
 
     # Make parameter an integer
