@@ -15,6 +15,9 @@ straight up into the air'''
 
 
 def main():
+    '''Main function for calling
+    functions and sending output
+    to user'''
 
     # Call getInput
     # and set return values
@@ -46,10 +49,10 @@ def main():
 # End of main---------------------------------
 
 
-'''A function called getInput
-that gets the height and velocity
-from user'''
 def getInput():
+    '''Create a function called getInput
+    to get the height and velocity
+    from user'''
 
     # Ask user for height in feet
     # and initial velocity in feet
@@ -63,13 +66,12 @@ def getInput():
         return height, velocity
     print("Input is not valid.")
 
-# End of getInput()----------------------------------
+    # End of getInput()----------------------------------
 
 
-'''A function called isValid
-to verify data type of
-height and velocity are correct'''
 def isValid(h, v):
+    '''Create a function called isValid
+    to verify data type is correct'''
 
     # Check input from user
     # height and then velocity
@@ -82,10 +84,10 @@ def isValid(h, v):
 # End of isValid()----------------------------------
 
 
-'''A function called maxHeight
-to calculate the maximum height
-of the ball'''
 def maxHeight(h, v):
+    '''Create function called maxHeight
+    to calculate the maximum height
+    of the ball'''
 
     # Set variables equal to integers
     h = int(h)
@@ -106,10 +108,10 @@ def maxHeight(h, v):
 # End of maxHeight()----------------------
 
 
-'''A function called exFinal
-to find out when the ball is
-at the ground again'''
 def exFinal(h, v):
+    '''Create function called exFinal
+    to find out when the ball is
+    at the ground again'''
 
     # Initialize time variable
     # and make parameters integers
@@ -145,10 +147,12 @@ def exFinal(h, v):
 # traveled in the x-direction
 # ----------------------------------------
 
-'''A function exDistance
-calculates the total distance
-traveled in the x-direction'''
+
+
 def exDistance(v):
+    '''Create function exDistance
+    to calculate the total distance
+    traveled in the x-direction'''
 
     # Make parameter an integer
     v = int(v)
