@@ -22,15 +22,23 @@ def main():
     # Ask user for word
     threeLetters = input("Please enter a word: ")
 
+    threeLetters.lower()
+
     # Call isTripleConsecutive function
     # in an if statement
+    if isTripleConsecutive(threeLetters):
 
-    # If true, print the success message
+        # If true, print the success message
+        print("There are three consecutive letters",
+              " in your word that match three consecutive",
+              " letters in the alphabet.")
 
     # If false, print the unsuccessful
     # message
+    else:
+        print("There is no match.")
 
-# End of main function
+# End of main function--------------------------------
 
 def isTripleConsecutive(tripleLetters):
     '''This function takes a string as input
@@ -41,10 +49,14 @@ def isTripleConsecutive(tripleLetters):
 
     # Initialize string with letters
     # of the alphabet
-    alphabet = "abcdefghijklmnopqrstuvwxyz"
+#    alphabet = "abcdefghijklmnopqrstuvwxyz"
 
     # Use a loop to iterate through
     # argument string
+    for i in range(len(tripleLetters) - 2):
+        if ord(tripleLetters[i]) == ord(tripleLetters[i + 1]) + 1 == ord(tripleLetters[i + 2]) + 2:
+            return True
+        return False
 
     # If there are three consecutive
     # letters in the argument that match
@@ -55,7 +67,7 @@ def isTripleConsecutive(tripleLetters):
     # consecutive letters matching,
     # return False
 
-# End of isTripleConsecutive function
+# End of isTripleConsecutive function------------------------
 
 # Call main function
 main()
